@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <GoogleMap />
+    <share_it />
+    <GoogleAdsense/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GoogleMap from "./components/GoogleMap.vue";
+import share_it from "./components/share-it.vue";
+import GoogleAdsense from "./components/GoogleAdsense.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    GoogleMap,
+    share_it,
+    GoogleAdsense,
+  },
+};
 </script>
 
 <style>
